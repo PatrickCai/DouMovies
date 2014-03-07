@@ -9,34 +9,19 @@ sys.path.append(dirname)
 
 import loved
 import collected
-from collections import Counter
 from spider import get_soup
 
 
 from role.celebrity  import Celebrity
 from role.movie import Movie
-
+from doulist.doulist import Doulist, Celebrities_list
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
-
 def merge_the_celebrities():
-	star_celebrities = loved.four_star_celebrities + loved.five_star_celebrities + collected.celebrities
-	'''merge all the celebrities into one list and make its final socre'''
-	four_counter = Counter(collected.celebrities)
-	three_counter = Counter(loved.four_star_celebrities)
-	two_counter = Counter(loved.five_star_celebrities)
 
-	for star_celebrity in star_celebrities :
-		original_score = 0
-		original_score += (four_counter[star_celebrity] * 3)
-		original_score += (three_counter[star_celebrity] * 3) 
-		original_score += (two_counter[star_celebrity] * 2)
-		star_celebrity.original_score = original_score		
-	#merge the celebrities including the movies involved
-	movie_counter = Counter(loved.four_star_celebrities + loved.five_star_celebrities)
-	for movie, times in 
-	star_celebrities = sorted(set(star_celebrities), key=lambda x:x.original_score, reverse=True)
+	star_celebrities = loved.star_celebrities.add(collected.celebrities)
+	star_celebrities = sorted(star_celebrities, key=lambda x:x.original_score, reverse=True)
 
 	low_number = 0
 	for celebrity in star_celebrities:
@@ -56,10 +41,27 @@ def merge_the_celebrities():
 
 
 
-
-	for star_celebrity in star_celebrities :
+	for star_celebrity in star_celebrities:
 		print('id:%s final:%s original%s movie %s' %(star_celebrity.ID, star_celebrity.final_score, 
 													 star_celebrity.original_score, star_celebrity.movie_loved))
+	return star_celebrities
+	print(len(star_celebrities))
+
+
+def merge_the_movies(movie_list):
+	movie_list = sorted(movie_list, key=lambda x:x.original_score, reverse=True)
+	movie_list = movie_list[0:100]#Only choose the front 200!
+
+	for movie, number in enumerate(movie_list):
+		star = float(movie.star)/10
+		bonus_score = 20 - number * 20 / len(movie_list)
+		movie.final_score = (1+star) * (80+bonus_score)
+
+	movie_list = sorted(movie_list, key=lambda x:x.final_score, reverse=True)
+	print(movie_list)
+	return movie_list
+
+
 
 
 

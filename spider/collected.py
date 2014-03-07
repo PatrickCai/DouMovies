@@ -13,18 +13,17 @@ from bs4 import BeautifulSoup
 from role.celebrity  import Celebrity
 from spider import get_soup
 
-
+from doulist.doulist import Celebrities_list
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-celebrities_IDs = []
-celebrities = []
+celebrities = Celebrities_list()
 def get_celebrities(username, start_number):
 	url = 'http://movie.douban.com/people/%s/celebrities?start=%s'%(username, start_number)
 	soup = get_soup(url)
 	page_celebrities = soup.findAll('a',  href=re.compile('http://movie.douban.com/celebrity/\d{7}/$'))
 	page_celebrities = set([re.search('\d{7}', celebrity['href']).group() for celebrity in page_celebrities])
-	page_celebrities = [Celebrity(page_celebrity, collect_or_watch='collect') for page_celebrity in page_celebrities]
+	page_celebrities = [Celebrity(page_celebrity, collect_or_watch='collect', original_score=5) for page_celebrity in page_celebrities]
 	celebrities.extend(page_celebrities)
 
 

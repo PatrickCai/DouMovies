@@ -11,6 +11,7 @@ from spider import get_soup
 
 from role.celebrity  import Celebrity
 from role.movie import Movie
+from doulist.doulist import Doulist, Celebrities_list
 
 import gevent.monkey
 gevent.monkey.patch_socket()
@@ -44,8 +45,8 @@ def get_movies_pages(username, star):
 	# current_pages_number = current_pages * 30
 	return movies_pages
 
-four_star_movies_IDs = []
-five_star_movies_IDs = []
+four_star_movies_IDs = Doulist()
+five_star_movies_IDs = Doulist()
 def get_movies(username, star, start_number):
 	url = 'http://movie.douban.com/people/%s/collect?start=%s&rating=%s&mode=list'%(username, start_number, star)
 	soup = get_soup(url)
@@ -58,10 +59,8 @@ def get_movies(username, star, start_number):
 		five_star_movies_IDs.extend(page_movies)
 
 
-four_star_celebrities = []
-five_star_celebrities = []
-four_star_directors =[]
-five_star_directors =[]
+star_celebrities = Celebrities_list()
+star_directors = Celebrities_list()
 def get_celebrities(username, star, star_movie_ID):
 	url = 'http://movie.douban.com/subject/%s/'%(star_movie_ID)
 	soup = get_soup(url)
@@ -71,15 +70,14 @@ def get_celebrities(username, star, star_movie_ID):
 	#TODO!the directors are not included!
 	directors_htmls = soup.findAll('a', {'rel':'v:directedBy'}, href=re.compile('/celebrity/\d{7}'))
 	directors_IDs = [re.search('(\d{7})', directors_html['href']).group() for directors_html in directors_htmls]
-	
-	page_celebrities = [Celebrity(page_celebrity_ID) for page_celebrity_ID in page_celebrity_IDs]
+	page_celebrities = [Celebrity(page_celebrity_ID, original_score=star) for page_celebrity_ID in page_celebrity_IDs]
 	#movie information
 	movie_name =soup.find('span', {'property':'v:itemreviewed'}).text 
 	movie = Movie(star_movie_ID, movie_name)
 	for page_celebrity in page_celebrities:
-		page_celebrity.add_loved_movie(star_movie_ID) 
+		page_celebrity.add_loved_movie(movie) 
 
-	five_star_celebrities.extend(page_celebrities) if star=='5' else four_star_celebrities.extend(page_celebrities)
+	star_celebrities.extends(page_celebrities, movie, star)
 	print('OK %s movie ID'%(star_movie_ID))
 
 

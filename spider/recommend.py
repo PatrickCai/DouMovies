@@ -3,6 +3,7 @@
 
 import sys
 import os
+import re
 
 import gevent.monkey
 gevent.monkey.patch_socket()
@@ -10,11 +11,35 @@ gevent.monkey.patch_socket()
 dirname = os.path.dirname(sys.path[0])
 sys.path.append(dirname)
 
+from doulist.doulist import Movie_list
 from spider import get_soup
+
+from role.movie import Recommend_movie
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-def get_movies(username, ID, start_number):
-	url = 'http://movie.douban.com/celebrity/%s/movies?start=%s&format=text&sortby=vote&'%(ID, start_number)
+movie_list = Movie_list()
+def get_movies(username, celebrity, start_number):
+	url = 'http://movie.douban.com/celebrity/%s/movies?start=%s&format=text&sortby=vote&role=A'%(celebrity.ID, start_number)
 	soup = get_soup(url)
+	movie_htmls = soup.findAll('a', href=re.compile('http://movie.douban.com/subject/\d{7,8}'))
+	star_htmls = soup.findAll('span', class_='rating_nums')
+
+	movie_IDs = [re.search('\d{7,8}', movie_html['href']).group() for movie_html in movie_htmls]
+	movie_names = [movie_html.text for movie_html in movie_htmls]
+	stars = [star_html.text for star_html in star_htmls]
+	recommend_movies = Movie_list([Recommend_movie(movie_ID, movie_name, star, score=celebrity.final_score) 
+						for movie_ID, movie_name, star in zip(movie_IDs,
+																 movie_names, stars)])
+	
+	for movie in recommend_movies:
+		movie.add_celebrity(celebrity)
+
+
+	movie_list.extends(recommend_movies, celebrity)
+	print('celebrity ID %s OK '%(celebrity.ID))
+
+
+if __name__ == '__main__':
+	get_movies('cliffedge', '1040657', 0)
