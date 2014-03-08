@@ -14,7 +14,7 @@ from spider import get_soup
 
 from role.celebrity  import Celebrity
 from role.movie import Movie
-from doulist.doulist import Doulist, Celebrities_list
+from doulist.doulist import Doulist, Celebrities_list, Movie_list
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -41,24 +41,30 @@ def merge_the_celebrities():
 
 
 
-	for star_celebrity in star_celebrities:
-		print('id:%s final:%s original%s movie %s' %(star_celebrity.ID, star_celebrity.final_score, 
-													 star_celebrity.original_score, star_celebrity.movie_loved))
+	# for star_celebrity in star_celebrities:
+	# 	print('id:%s final:%s original%s movie %s' %(star_celebrity.ID, star_celebrity.final_score, 
+	# 												 star_celebrity.original_score, star_celebrity.movie_loved))
 	return star_celebrities
 	print(len(star_celebrities))
 
 
 def merge_the_movies(movie_list):
 	movie_list = sorted(movie_list, key=lambda x:x.original_score, reverse=True)
-	movie_list = movie_list[0:100]#Only choose the front 200!
+	movie_list = movie_list[0:200]#Only choose the front 200!
 
-	for movie, number in enumerate(movie_list):
-		star = float(movie.star)/10
+	for number, movie in enumerate(movie_list):
+		movie_star = unicode(movie.star)
+		try:
+			star = float(movie_star)/10
+		except ValueError:
+			star = 0
 		bonus_score = 20 - number * 20 / len(movie_list)
 		movie.final_score = (1+star) * (80+bonus_score)
 
+	movie_list = Movie_list(set(movie_list)-set(loved.movies_have_seen)) 
 	movie_list = sorted(movie_list, key=lambda x:x.final_score, reverse=True)
-	print(movie_list)
+
+	#delete all the meanless movies
 	return movie_list
 
 

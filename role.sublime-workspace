@@ -51,7 +51,7 @@
 			"file": "/Users/cai/caiProject/exercise1.py",
 			"settings":
 			{
-				"buffer_size": 167,
+				"buffer_size": 237,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "/Users/cai/百度云同步盘/programming.todo",
 			"settings":
 			{
-				"buffer_size": 5436,
+				"buffer_size": 5454,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +75,7 @@
 			"file": "role/celebrity.py",
 			"settings":
 			{
-				"buffer_size": 894,
+				"buffer_size": 904,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +83,7 @@
 			"file": "role/movie.py",
 			"settings":
 			{
-				"buffer_size": 834,
+				"buffer_size": 940,
 				"line_ending": "Unix"
 			}
 		}
@@ -225,7 +225,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -233,7 +233,7 @@
 					"file": "/Users/cai/caiProject/exercise1.py",
 					"settings":
 					{
-						"buffer_size": 167,
+						"buffer_size": 237,
 						"regions":
 						{
 						},
@@ -303,15 +303,15 @@
 					"file": "/Users/cai/百度云同步盘/programming.todo",
 					"settings":
 					{
-						"buffer_size": 5436,
+						"buffer_size": 5454,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								63,
-								63
+								0,
+								0
 							]
 						],
 						"settings":
@@ -382,8 +382,8 @@
 						"selection":
 						[
 							[
-								1237,
-								1237
+								1153,
+								1153
 							]
 						],
 						"settings":
@@ -436,7 +436,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 323.0,
+						"translation.y": 55.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -446,15 +446,15 @@
 					"file": "role/celebrity.py",
 					"settings":
 					{
-						"buffer_size": 894,
+						"buffer_size": 904,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								401,
-								401
+								262,
+								262
 							]
 						],
 						"settings":
@@ -517,15 +517,15 @@
 					"file": "role/movie.py",
 					"settings":
 					{
-						"buffer_size": 834,
+						"buffer_size": 940,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								609,
-								609
+								358,
+								358
 							]
 						],
 						"settings":

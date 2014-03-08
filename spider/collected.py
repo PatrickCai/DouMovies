@@ -23,12 +23,17 @@ def get_celebrities(username, start_number):
 	soup = get_soup(url)
 	page_celebrities = soup.findAll('a',  href=re.compile('http://movie.douban.com/celebrity/\d{7}/$'))
 	page_celebrities = set([re.search('\d{7}', celebrity['href']).group() for celebrity in page_celebrities])
-	page_celebrities = [Celebrity(page_celebrity, collect_or_watch='collect', original_score=5) for page_celebrity in page_celebrities]
+	names_html = soup.findAll('em')
+	names = [unicode(name.text) for name in names_html]
+	page_celebrities = [Celebrity(page_celebrity, collect_or_watch='collect', 
+						original_score=5, name=name) for page_celebrity,name in 
+						zip(page_celebrities, names)]
 	celebrities.extend(page_celebrities)
-
+	print('1.collect page%s OK'%(start_number))
 
 def get_celebrities_pages(username):
 	url = 'http://movie.douban.com/people/%s/celebrities'%(username)
+	print('Start!')
 	soup = get_soup(url)
 	title = soup.title.text
 	pages = int(re.search('\((\d+)\)$', title).group(1))	

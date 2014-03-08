@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"p",
+				"proxies_pickle"
+			],
+			[
 				"pr",
 				"proxies"
 			],
@@ -59,7 +63,7 @@
 			"file": "/Users/cai/caiProject/exercise1.py",
 			"settings":
 			{
-				"buffer_size": 167,
+				"buffer_size": 237,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +71,7 @@
 			"file": "/Users/cai/百度云同步盘/programming.todo",
 			"settings":
 			{
-				"buffer_size": 5436,
+				"buffer_size": 5454,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,15 +79,7 @@
 			"file": "main.py.dump",
 			"settings":
 			{
-				"buffer_size": 2891,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "spider/recommend.py",
-			"settings":
-			{
-				"buffer_size": 1363,
+				"buffer_size": 3095,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,7 +87,15 @@
 			"file": "spider/merge.py",
 			"settings":
 			{
-				"buffer_size": 1620,
+				"buffer_size": 1941,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spider/recommend.py",
+			"settings":
+			{
+				"buffer_size": 1629,
 				"line_ending": "Unix"
 			}
 		},
@@ -99,15 +103,15 @@
 			"file": "spider/collected.py",
 			"settings":
 			{
-				"buffer_size": 1143,
+				"buffer_size": 1332,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spider/loved.py",
+			"file": "spider/loved.py.dump",
 			"settings":
 			{
-				"buffer_size": 3178,
+				"buffer_size": 2820,
 				"line_ending": "Unix"
 			}
 		},
@@ -115,7 +119,15 @@
 			"file": "spider/spider.py",
 			"settings":
 			{
-				"buffer_size": 460,
+				"buffer_size": 1328,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/cai/caiProject/daili/daili.py.dump",
+			"settings":
+			{
+				"buffer_size": 1746,
 				"line_ending": "Unix"
 			}
 		}
@@ -148,11 +160,16 @@
 	},
 	"file_history":
 	[
+		"/Users/cai/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/cai/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/cai/caiProject/DouMovies/spider/loved.py",
+		"/Users/cai/caiProject/DouMovies/spider/merge.py.dump",
+		"/Users/cai/Documents/1",
+		"/Users/cai/caiProject/daili/daili.py",
 		"/Users/cai/caiProject/DouMovies/main.py",
 		"/Users/cai/caiProject/douYing/douban_movie.py",
 		"/Users/cai/caiProject/DouMovies/yes",
 		"/Users/cai/caiProject/DouMovies/spider/collected.py.dump",
-		"/Users/cai/caiProject/DouMovies/spider/merge.py.dump",
 		"/Users/cai/caiProject/DouMovies/spider/collected.py",
 		"/Users/cai/caiProject/DouMovies/role.sublime-project",
 		"/Users/cai/caiProject/DouMovies/role/celebrity.py",
@@ -160,7 +177,6 @@
 		"/Users/cai/caiProject/DouMovies/spider/spider.py",
 		"/Users/cai/caiProject/weibo/weibo.py",
 		"/Users/cai/caiProject/DouMovies/doulist/doulist.py",
-		"/Users/cai/caiProject/DouMovies/spider/loved.py",
 		"/Users/cai/caiProject/DouMovies/spider/recommend.py",
 		"/Users/cai/caiProject/reminder/review_list.py.dump",
 		"/Users/cai/caiProject/DouMovies/doulist/__init__.py",
@@ -198,6 +214,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"f11",
+			"f",
+			" )",
+			"star",
+			"good",
+			"e",
+			" \n",
+			"choice(proxies)",
+			"unicomovie",
+			" ]",
+			"goodi",
 			"impor",
 			"page_celebrities",
 			"star_celebrities",
@@ -266,7 +293,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -274,15 +301,15 @@
 					"file": "/Users/cai/caiProject/exercise1.py",
 					"settings":
 					{
-						"buffer_size": 167,
+						"buffer_size": 237,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								161,
-								161
+								235,
+								235
 							]
 						],
 						"settings":
@@ -344,15 +371,15 @@
 					"file": "/Users/cai/百度云同步盘/programming.todo",
 					"settings":
 					{
-						"buffer_size": 5436,
+						"buffer_size": 5454,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								187,
+								187
 							]
 						],
 						"settings":
@@ -416,15 +443,15 @@
 					"file": "main.py.dump",
 					"settings":
 					{
-						"buffer_size": 2891,
+						"buffer_size": 3095,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2885,
-								2885
+								3092,
+								3092
 							]
 						],
 						"settings":
@@ -477,25 +504,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 791.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "spider/recommend.py",
+					"file": "spider/merge.py",
 					"settings":
 					{
-						"buffer_size": 1363,
+						"buffer_size": 1941,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								375,
-								375
+								1917,
+								1917
 							]
 						],
 						"settings":
@@ -555,18 +582,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "spider/merge.py",
+					"file": "spider/recommend.py",
 					"settings":
 					{
-						"buffer_size": 1620,
+						"buffer_size": 1629,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1574,
-								1574
+								860,
+								860
 							]
 						],
 						"settings":
@@ -619,7 +646,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 266.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -629,15 +656,15 @@
 					"file": "spider/collected.py",
 					"settings":
 					{
-						"buffer_size": 1143,
+						"buffer_size": 1332,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								349,
-								360
+								258,
+								258
 							]
 						],
 						"settings":
@@ -697,18 +724,89 @@
 				},
 				{
 					"buffer": 6,
-					"file": "spider/loved.py",
+					"file": "spider/loved.py.dump",
 					"settings":
 					{
-						"buffer_size": 3178,
+						"buffer_size": 2820,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								624,
-								624
+								1986,
+								1986
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 488.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "spider/spider.py",
+					"settings":
+					{
+						"buffer_size": 1328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								888,
+								888
 							]
 						],
 						"settings":
@@ -767,19 +865,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "spider/spider.py",
+					"buffer": 8,
+					"file": "/Users/cai/caiProject/daili/daili.py.dump",
 					"settings":
 					{
-						"buffer_size": 460,
+						"buffer_size": 1746,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								247,
-								247
+								838,
+								838
 							]
 						],
 						"settings":
@@ -828,10 +926,11 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 341.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

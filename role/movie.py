@@ -9,9 +9,15 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 class Movie(object):
-	def __init__(self, ID, name):
+	def __init__(self, ID, name=None):
 		self.ID = ID
 		self.name = name
+	def __eq__(self, other):
+		return self.ID == other.ID
+
+	def __hash__(self):
+		return hash(self.ID)
+
 
 class Recommend_movie(Movie):
 	def __init__(self, ID, name, star, score=0) :

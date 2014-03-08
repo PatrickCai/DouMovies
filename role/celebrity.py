@@ -8,9 +8,9 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 class Celebrity(object):
-	def __init__(self, ID, collect_or_watch='watch', original_score=0):
+	def __init__(self, ID, collect_or_watch='watch', original_score=0,name=None):
 		self.ID = ID
-		self.name = None
+		self.name = name
 		self.role = None
 		self.collect_or_watch = None
 		self.original_score = int(original_score) - 2
