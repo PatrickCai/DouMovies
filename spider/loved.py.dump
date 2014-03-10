@@ -23,7 +23,7 @@ sys.setdefaultencoding('utf-8')
 
 def get_movies_pages(username):
 	url = 'http://movie.douban.com/people/%s/collect?&mode=list'%(username)
-	soup = get_soup(url, timeout=1)
+	soup = get_soup(url, timeout=1, priority='high')
 	title_text = soup.title.text
 	movies_pages = (int(re.search('\((\d+)\)', title_text).group(1))/30 + 1)*30
 	return movies_pages
@@ -31,9 +31,10 @@ def get_movies_pages(username):
 four_star_movies_IDs = Doulist()
 five_star_movies_IDs = Doulist()
 movies_have_seen = Movie_list()
+
 def get_movies(username, start_number):
 	url = 'http://movie.douban.com/people/%s/collect?start=%s&mode=list'%(username, start_number)
-	soup = get_soup(url, timeout=20)
+	soup = get_soup(url, timeout=10)
 	htmls = soup.findAll('li', id=re.compile('list\d{7,8}'),  class_=re.compile('item')) 
 	for html in htmls:
 		star_html = html.find('span', class_=re.compile('rating\d-t'))
@@ -62,6 +63,10 @@ def get_celebrities(username, star, star_movie_ID):
 	#TODO!the directors are not included!
 	directors_htmls = soup.findAll('a', {'rel':'v:directedBy'}, href=re.compile('/celebrity/\d{7}'))
 	directors_IDs = [re.search('(\d{7})', directors_html['href']).group() for directors_html in directors_htmls]
+	directors_names = [director.text for director in directors_htmls]
+	page_directors = [Celebrity(directors_ID, original_score=star, name=name, role='director')
+						 for directors_ID, name in zip(directors_IDs, directors_names) ]
+	
 	page_celebrities = [Celebrity(page_celebrity_ID, original_score=star, name=name)
 						 for page_celebrity_ID,name in zip(page_celebrity_IDs, page_celebrity_names)]
 	#movie information
@@ -69,10 +74,13 @@ def get_celebrities(username, star, star_movie_ID):
 	movie = Movie(star_movie_ID, movie_name)
 	for page_celebrity in page_celebrities:
 		page_celebrity.add_loved_movie(movie) 
+	for page_director in page_directors:
+		page_director.add_loved_movie(movie)
 
+	star_directors.extends(page_directors, movie, star)
 	star_celebrities.extends(page_celebrities, movie, star)
 	print('3.OK %s movie ID'%(star_movie_ID))
 
 
 if __name__ == '__main__':
-	get_movies('cliffedge', '0')
+	get_celebrities('cliffedge', '0', '1418834')

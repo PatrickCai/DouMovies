@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"col",
+				"collect_or_watch"
+			],
+			[
 				"cele",
 				"celebrities"
 			],
@@ -51,7 +55,7 @@
 			"file": "/Users/cai/caiProject/exercise1.py",
 			"settings":
 			{
-				"buffer_size": 237,
+				"buffer_size": 277,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +71,23 @@
 			"file": "doulist/doulist.py.dump",
 			"settings":
 			{
-				"buffer_size": 1761,
+				"buffer_size": 1729,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "role/comment.py",
+			"settings":
+			{
+				"buffer_size": 311,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "role/movie.py.dump",
+			"settings":
+			{
+				"buffer_size": 984,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,15 +95,7 @@
 			"file": "role/celebrity.py",
 			"settings":
 			{
-				"buffer_size": 904,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "role/movie.py",
-			"settings":
-			{
-				"buffer_size": 940,
+				"buffer_size": 988,
 				"line_ending": "Unix"
 			}
 		}
@@ -116,6 +128,7 @@
 	},
 	"file_history":
 	[
+		"/Users/cai/caiProject/DouMovies/role/movie.py",
 		"/Users/cai/caiProject/DouMovies/doulist/doulist.py",
 		"/Users/cai/caiProject/DouMovies/role.sublime-project",
 		"/Users/cai/caiProject/DouMovies/spider/collected.py",
@@ -124,7 +137,6 @@
 		"/Users/cai/caiProject/DouMovies/main.py",
 		"/Users/cai/caiProject/douYing/douban_movie.py",
 		"/Users/cai/caiProject/DouMovies/role/celebrity.py",
-		"/Users/cai/caiProject/DouMovies/role/movie.py",
 		"/Users/cai/caiProject/DouMovies/spider/spider.py",
 		"/Users/cai/caiProject/weibo/weibo.py",
 		"/Users/cai/caiProject/DouMovies/spider/recommend.py",
@@ -163,6 +175,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"None",
 			"score",
 			"cele_list",
 			"_",
@@ -233,7 +246,7 @@
 					"file": "/Users/cai/caiProject/exercise1.py",
 					"settings":
 					{
-						"buffer_size": 237,
+						"buffer_size": 277,
 						"regions":
 						{
 						},
@@ -375,86 +388,15 @@
 					"file": "doulist/doulist.py.dump",
 					"settings":
 					{
-						"buffer_size": 1761,
+						"buffer_size": 1729,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1153,
-								1153
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 55.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "role/celebrity.py",
-					"settings":
-					{
-						"buffer_size": 904,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								262,
-								262
+								1243,
+								1243
 							]
 						],
 						"settings":
@@ -513,19 +455,169 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "role/movie.py",
+					"buffer": 3,
+					"file": "role/comment.py",
 					"settings":
 					{
-						"buffer_size": 940,
+						"buffer_size": 311,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								358,
-								358
+								311,
+								311
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "role/movie.py.dump",
+					"settings":
+					{
+						"buffer_size": 984,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								668,
+								668
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "role/celebrity.py",
+					"settings":
+					{
+						"buffer_size": 988,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								495,
+								495
 							]
 						],
 						"settings":

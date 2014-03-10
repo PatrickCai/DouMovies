@@ -22,8 +22,10 @@ sys.setdefaultencoding('utf-8')
 movie_list = Movie_list()
 second_page_celebrities = []
 third_page_celebrities = []
-def get_movies(username, celebrity, start_number):
-	url = 'http://movie.douban.com/celebrity/%s/movies?start=%s&format=text&sortby=vote&role=A'%(celebrity.ID, start_number)
+def get_movies(username, celebrity, start_number, role='performer'):
+	choose_role = {'performer':'A', 'director':'D'}
+	movie_role = choose_role[role]
+	url = 'http://movie.douban.com/celebrity/%s/movies?start=%s&format=text&sortby=vote&role=%s'%(celebrity.ID, start_number, movie_role)
 	soup = get_soup(url, timeout=15)
 	movie_htmls = soup.findAll('a', href=re.compile('http://movie.douban.com/subject/\d{7,8}'))
 	star_htmls = soup.findAll('span', class_='rating_nums')

@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"imag",
+				"image_url"
+			],
+			[
+				"ex",
+				"existing_movies"
+			],
+			[
+				"ce",
+				"celebrities"
+			],
+			[
+				"final_ce",
+				"final_celebrities"
+			],
+			[
+				"page_dir",
+				"page_directors"
+			],
+			[
+				"page_d",
+				"page_directors"
+			],
+			[
 				"p",
 				"proxies_pickle"
 			],
@@ -63,7 +87,7 @@
 			"file": "/Users/cai/caiProject/exercise1.py",
 			"settings":
 			{
-				"buffer_size": 237,
+				"buffer_size": 277,
 				"line_ending": "Unix"
 			}
 		},
@@ -76,18 +100,18 @@
 			}
 		},
 		{
-			"file": "main.py.dump",
+			"file": "main.py",
 			"settings":
 			{
-				"buffer_size": 3095,
+				"buffer_size": 4433,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spider/merge.py",
+			"file": "spider/filtered.py",
 			"settings":
 			{
-				"buffer_size": 1941,
+				"buffer_size": 1771,
 				"line_ending": "Unix"
 			}
 		},
@@ -95,7 +119,15 @@
 			"file": "spider/recommend.py",
 			"settings":
 			{
-				"buffer_size": 1629,
+				"buffer_size": 1741,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spider/merge.py",
+			"settings":
+			{
+				"buffer_size": 2531,
 				"line_ending": "Unix"
 			}
 		},
@@ -103,7 +135,7 @@
 			"file": "spider/collected.py",
 			"settings":
 			{
-				"buffer_size": 1332,
+				"buffer_size": 1485,
 				"line_ending": "Unix"
 			}
 		},
@@ -111,7 +143,7 @@
 			"file": "spider/loved.py.dump",
 			"settings":
 			{
-				"buffer_size": 2820,
+				"buffer_size": 3216,
 				"line_ending": "Unix"
 			}
 		},
@@ -119,7 +151,7 @@
 			"file": "spider/spider.py",
 			"settings":
 			{
-				"buffer_size": 1328,
+				"buffer_size": 1532,
 				"line_ending": "Unix"
 			}
 		},
@@ -127,7 +159,7 @@
 			"file": "/Users/cai/caiProject/daili/daili.py.dump",
 			"settings":
 			{
-				"buffer_size": 1746,
+				"buffer_size": 2294,
 				"line_ending": "Unix"
 			}
 		}
@@ -160,6 +192,10 @@
 	},
 	"file_history":
 	[
+		"/Users/cai/caiProject/DouMovies/role/comment.py",
+		"/Users/cai/caiProject/DouMovies/spider/comment.py",
+		"/Users/cai/caiProject/DouMovies/main.py.dump",
+		"/Users/cai/caiProject/daili/best_daili",
 		"/Users/cai/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/cai/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/cai/caiProject/DouMovies/spider/loved.py",
@@ -214,6 +250,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"1053560",
+			"five_comment",
+			" \n",
+			"usernamemovie_list",
+			", ",
+			"direct",
+			"	\n",
+			"proxies",
+			"good",
+			"d",
+			"goo",
+			" gevent",
+			".\n",
+			"spaw",
+			"class",
+			"__main__",
 			"f11",
 			"f",
 			" )",
@@ -293,7 +345,7 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -301,15 +353,15 @@
 					"file": "/Users/cai/caiProject/exercise1.py",
 					"settings":
 					{
-						"buffer_size": 237,
+						"buffer_size": 277,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								235,
-								235
+								264,
+								264
 							]
 						],
 						"settings":
@@ -440,18 +492,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "main.py.dump",
+					"file": "main.py",
 					"settings":
 					{
-						"buffer_size": 3095,
+						"buffer_size": 4433,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3092,
-								3092
+								4232,
+								4232
 							]
 						],
 						"settings":
@@ -504,25 +556,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 791.0,
+						"translation.y": 1226.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "spider/merge.py",
+					"file": "spider/filtered.py",
 					"settings":
 					{
-						"buffer_size": 1941,
+						"buffer_size": 1771,
 						"regions":
 						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
 						},
 						"selection":
 						[
 							[
-								1917,
-								1917
+								858,
+								858
 							]
 						],
 						"settings":
@@ -575,7 +636,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 281.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -585,15 +646,15 @@
 					"file": "spider/recommend.py",
 					"settings":
 					{
-						"buffer_size": 1629,
+						"buffer_size": 1741,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								860,
-								860
+								1220,
+								1220
 							]
 						],
 						"settings":
@@ -646,25 +707,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 146.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "spider/collected.py",
+					"file": "spider/merge.py",
 					"settings":
 					{
-						"buffer_size": 1332,
+						"buffer_size": 2531,
 						"regions":
 						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
 						},
 						"selection":
 						[
 							[
-								258,
-								258
+								2293,
+								2293
 							]
 						],
 						"settings":
@@ -724,18 +794,18 @@
 				},
 				{
 					"buffer": 6,
-					"file": "spider/loved.py.dump",
+					"file": "spider/collected.py",
 					"settings":
 					{
-						"buffer_size": 2820,
+						"buffer_size": 1485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1986,
-								1986
+								809,
+								809
 							]
 						],
 						"settings":
@@ -788,25 +858,176 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 488.0,
+						"translation.y": 86.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "spider/spider.py",
+					"file": "spider/loved.py.dump",
 					"settings":
 					{
-						"buffer_size": 1328,
+						"buffer_size": 3216,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								888,
-								888
+								985,
+								985
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "spider/spider.py",
+					"settings":
+					{
+						"buffer_size": 1532,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								271,
+								271
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 116.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/cai/caiProject/daili/daili.py.dump",
+					"settings":
+					{
+						"buffer_size": 2294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								226
 							]
 						],
 						"settings":
@@ -863,77 +1084,6 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/Users/cai/caiProject/daili/daili.py.dump",
-					"settings":
-					{
-						"buffer_size": 1746,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								838,
-								838
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 341.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		}
@@ -971,7 +1121,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 100.0
+		"height": 149.0
 	},
 	"replace":
 	{
@@ -994,6 +1144,10 @@
 			[
 				"",
 				"/Users/cai/caiProject/DouMovies/role.sublime-project"
+			],
+			[
+				"main",
+				"/Users/cai/caiProject/DouMovies/main.sublime-project"
 			]
 		],
 		"width": 380.0

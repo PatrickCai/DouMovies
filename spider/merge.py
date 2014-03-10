@@ -46,7 +46,13 @@ def merge_the_celebrities():
 	# 												 star_celebrity.original_score, star_celebrity.movie_loved))
 	return star_celebrities
 	print(len(star_celebrities))
-
+def merge_the_directors():
+	star_directors = sorted(loved.star_directors, key=lambda x:x.original_score, reverse=True)
+	for number,director in enumerate(star_directors):
+		number_slice = len(star_directors)/5
+		score_number = {0:9, 1:8, 2:7, 3:6, 4:5, 5:5}
+		director.final_score = score_number[int(number/number_slice)]
+	return star_directors
 
 def merge_the_movies(movie_list):
 	movie_list = sorted(movie_list, key=lambda x:x.original_score, reverse=True)
@@ -64,8 +70,12 @@ def merge_the_movies(movie_list):
 	movie_list = Movie_list(set(movie_list)-set(loved.movies_have_seen)) 
 	movie_list = sorted(movie_list, key=lambda x:x.final_score, reverse=True)
 
+	final_movie_list = Movie_list()
 	#delete all the meanless movies
-	return movie_list
+	for movie in movie_list:
+		if not re.search(u'第[\u4e00-\u9fa5]+季|周末夜现场|颁奖典礼|学院奖|第[\u4e00-\u9fa5]+部|哈利·波特|星球大战|迷离档案|美利坚向英雄致敬', movie.name):
+			final_movie_list.append(movie)
+	return final_movie_list
 
 
 

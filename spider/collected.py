@@ -20,9 +20,12 @@ sys.setdefaultencoding('utf-8')
 celebrities = Celebrities_list()
 def get_celebrities(username, start_number):
 	url = 'http://movie.douban.com/people/%s/celebrities?start=%s'%(username, start_number)
-	soup = get_soup(url)
-	page_celebrities = soup.findAll('a',  href=re.compile('http://movie.douban.com/celebrity/\d{7}/$'))
-	page_celebrities = set([re.search('\d{7}', celebrity['href']).group() for celebrity in page_celebrities])
+	soup = get_soup(url, timeout=4)
+	page_celebrities = soup.findAll('a', href=re.compile('http://movie.douban.com/celebrity/\d{7}/$'))
+	page_celebrities = [re.search('\d{7}', celebrity['href']).group() 
+						for celebrity in page_celebrities 
+						if page_celebrities.index(celebrity)%2 == 0]
+
 	names_html = soup.findAll('em')
 	names = [unicode(name.text) for name in names_html]
 	page_celebrities = [Celebrity(page_celebrity, collect_or_watch='collect', 
@@ -34,12 +37,13 @@ def get_celebrities(username, start_number):
 def get_celebrities_pages(username):
 	url = 'http://movie.douban.com/people/%s/celebrities'%(username)
 	print('Start!')
-	soup = get_soup(url)
+	soup = get_soup(url, priority='high', timeout=2)
 	title = soup.title.text
 	pages = int(re.search('\((\d+)\)$', title).group(1))	
 	return pages
 
-
+if __name__ == '__main__':
+	get_celebrities('cliffedge', '0')
 
 
 

@@ -27,7 +27,6 @@ class Celebrities_list(list):
 				celebrity.add_loved_movie(movie)
 				celebrity.add_original_score(star)
 				celebrities.remove(celebrity)
-				# self = self + celebrities
 		super(Celebrities_list, self).extend(celebrities)
 
 

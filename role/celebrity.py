@@ -8,14 +8,17 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 class Celebrity(object):
-	def __init__(self, ID, collect_or_watch='watch', original_score=0,name=None):
+	def __init__(self, ID, collect_or_watch='watch', 
+				original_score=0,name=None, role='performer',
+				image_url=None):
 		self.ID = ID
 		self.name = name
-		self.role = None
-		self.collect_or_watch = None
+		self.role = role
+		self.collect_or_watch = collect_or_watch
 		self.original_score = int(original_score) - 2
 		self.final_score = None
 		self.movie_loved = []
+		self.image_url = image_url
 
 	def add_loved_movie(self, movie):
 		self.movie_loved.append(movie)
